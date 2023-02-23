@@ -10,6 +10,7 @@
         "outDir": "dist",
         "baseUrl": ".",
         "resolveJsonModule": true,
+        "skipLibCheck": true,
         "paths": {
             "*": [
                 "node_modules/*"
@@ -18,6 +19,10 @@
     },
     "include": [
         "src/**/*",
-        "serviceAccount.json"
+        "service-account.json",
+        "app-config.json"
+    ],
+    "exclude": [
+        "node_modules/*"
     ]
 }
